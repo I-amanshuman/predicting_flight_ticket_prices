@@ -62,16 +62,72 @@ Scatter plot, between price and duration
 
 -- Bivariate data analysis --
 
+Comparing airlines with price
+
+![image](https://user-images.githubusercontent.com/77953290/229465721-5a8cf96f-00c3-4b87-86b1-cb43fb663c97.png)
 
 
+Using Violin plots to get distribution and outliers 
+
+![image](https://user-images.githubusercontent.com/77953290/229465853-fdd6e194-b1c0-4338-9126-67e2669de2c5.png)
+
+-- One hot Encoding to change the categorical variables to numerical ones -- 
+
+![image](https://user-images.githubusercontent.com/77953290/229466047-97b52491-b85d-4046-8bd5-a9645a1ee830.png)
 
 
+-- Detecting outliers using sns boxplot --
+![image](https://user-images.githubusercontent.com/77953290/229466255-f9b2db61-b430-4b36-8628-49b8d811741e.png)
+
+-- Imputing the outliers by median, so that the skewness is not impacted by the outliers
+
+![image](https://user-images.githubusercontent.com/77953290/229466484-a7df89e4-3105-4a3c-8c40-4d8abfc097cc.png)
 
 
+Feature selection from sklearn package, mutual_info_regression
+
+	Importance
+Airline	0.980631
+Total_Stops	0.792608
+source_Delhi	0.517639
+total_duration_minutes	0.492751
+Duration_hours	0.472158
+source_Kolkata	0.466463
+Arrival_Time_hour	0.408386
+source_Banglore	0.387991
+Duration_minutes	0.343591
+Arrival_Time_minute	0.341714
+Dep_Time_hour	0.341051
+Dep_Time_minute	0.253350
+journey_month	0.240445
+source_Mumbai	0.199007
+journey_day	0.195868
+source_Chennai	0.129192
+journey_year	0.000000
+
+-- Correlation analysis --
+
+![image](https://user-images.githubusercontent.com/77953290/229466768-8dc94d21-5181-4320-b7ff-0dc34ff836f6.png)
 
 
+![image](https://user-images.githubusercontent.com/77953290/229466847-1f15217a-de8f-4f47-a87b-5b30a19e312e.png)
 
 
+Let's train the model to get the predicted prices with accuracy
 
+![image](https://user-images.githubusercontent.com/77953290/229467050-0834bb0e-3ca3-4810-89a0-f1cb35901199.png)
+
+
+Hyperparameter tuning to get a better a R2 score 
+
+![image](https://user-images.githubusercontent.com/77953290/229467229-8a879dfb-bc39-4a49-8d5a-7238515fe05f.png)
+
+
+New R2 Score:
+
+![image](https://user-images.githubusercontent.com/77953290/229467302-fc80f090-71c0-45e7-ae10-736c752cda79.png)
+
+
+Thus with the model, we were able to get an R2 of 82%, or in other words, almost 82% of the variance in the data
 
 
